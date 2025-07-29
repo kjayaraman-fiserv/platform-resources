@@ -1,0 +1,16 @@
+resourceMappings:
+  - context: staging
+    type: service
+    use: ec2-nginx-reverseproxy
+
+  - context: staging
+    type: postgres
+    use: ec2-postgres-free-tier
+
+  - context: staging
+    type: dns
+    use: route53-private-zone
+
+  - context: staging
+    type: kafka-topic
+    use: kafka-lite-dev-broker
