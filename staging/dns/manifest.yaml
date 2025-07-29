@@ -1,0 +1,8 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${RESOURCE_NAME}
+spec:
+  type: ExternalName
+  externalName: staging.internal.example.com
